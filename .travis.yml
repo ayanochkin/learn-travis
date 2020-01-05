@@ -13,8 +13,6 @@ before_install:
   - docker build -t ayanochkin/learn-travis .
   - docker ps -a
   - docker run ayanochkin/learn-travis /bin/sh -c "cd /root/learn-travis; bundle exec rake test"
-script:
-  - bundle exec rake test
   
 deploy:
   provider: script
