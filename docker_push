@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push ayanochkin/learn-travis
+docker image build -t ayanochkin/learn-travis:test1
+docker push ayanochkin/learn-travis:test1
