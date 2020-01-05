@@ -1,7 +1,7 @@
 # Create an image for the learn-travis
 FROM node AS source
 RUN mkdir -p /node/learn-travis
-ADD src/ /node/learn-travis
+ADD . /node/learn-travis
 WORKDIR /node/learn-travis
 RUN npm install
 
